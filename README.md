@@ -31,7 +31,7 @@ cd AbxClient_Tiker_Reader
 
 3. Navigate to the exchange server folder and run the server:
 ```bash
-cd exchange_server
+cd abx_exchange_server
 node main.js
 ```
 > 📌 This will start the ABX Exchange Server on port 3000
@@ -62,23 +62,6 @@ dotnet run
 
 The client generates a file called `output.json` inside the `ABXClient` folder.  
 This JSON file contains all packets from the server with no missing sequences.
-
----
-
-## 🧪 Notes
-
-- The client uses TCP protocol to communicate with the server on `localhost:3000`
-- It handles "Stream All Packets" and detects/resends any missing packets using the "Resend Packet" call
-- All responses are parsed and validated using Big Endian format as per server spec
-
----
-
-## 📮 Submission
-
-Once completed, fill and submit the Google Form:  
-👉 https://forms.gle/V8F1hf68cJEN8kAM9
-
-Please keep your repository **public** and make sure this README is up to date.
 
 ---
 
