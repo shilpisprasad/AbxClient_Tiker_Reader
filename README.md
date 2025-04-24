@@ -46,4 +46,4 @@ dotnet run
 
 ## Output
 
-The client generates a file `output.json` inside the `ABXClient` folder containing all ticker data from the server.
+The client generates a file `output.json` inside the `ABXClient\bin\Debug\net8.0` folder containing all ticker data from the server.
