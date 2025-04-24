@@ -1,6 +1,6 @@
 # ABX Client Ticker Reader
 
-This repository contains a C# client application that connects to a mock stock exchange server (ABX Exchange Server) running on Node.js. The client requests ticker data, handles missing packets, and outputs a complete JSON file with all received ticker data in sequence.
+This repository contains a C# client application that connects to a stock exchange server (ABX Exchange Server) running on Node.js. The client requests ticker data, handles missing packets, and outputs a complete JSON file with all received ticker data in sequence.
 
 ---
 
@@ -8,9 +8,9 @@ This repository contains a C# client application that connects to a mock stock e
 
 ```
 AbxClient_Tiker_Reader/
-├── ABXClient/              # C# client app (.NET Core)
-├── exchange_server/        # Node.js mock ABX Exchange Server
-│   └── main.js             # Server entry point
+├── ABXClient/                  # C# client app (.NET Core)
+├── abx_exchange_server/        # Node.js ABX Exchange Server
+│   └── main.js                 # Server entry point
 └── README.md
 ```
 
