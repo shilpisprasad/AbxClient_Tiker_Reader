@@ -2,23 +2,19 @@
 
 This repository contains a C# client application that connects to a stock exchange server (ABX Exchange Server) running on Node.js. The client requests ticker data, handles missing packets, and outputs a complete JSON file with all received ticker data in sequence.
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 AbxClient_Tiker_Reader/
-├── ABXClient/                  # C# client app (.NET Core)
-├── abx_exchange_server/        # Node.js ABX Exchange Server
-│   └── main.js                 # Server entry point
+├── ABXClient/              # C# client app (.NET Core)
+├── abx_exchange_server/    # Node.js ABX Exchange Server
+│   └── main.js             # Server entry point
 └── README.md
 ```
 
----
+## How to Run
 
-## 🛠 How to Run Locally
-
-### 1️⃣ Start the ABX Exchange Server
+### Start the ABX Exchange Server
 
 1. Clone the repository:
 ```bash
@@ -26,45 +22,28 @@ git clone https://github.com/shilpisprasad/AbxClient_Tiker_Reader.git
 cd AbxClient_Tiker_Reader
 ```
 
-2. Install Node.js (version 16.17.0 or later):  
-➡️ https://nodejs.org/en/download
+2. You should have Node.js (>=16.17.0) installed.
 
-3. Navigate to the exchange server folder and run the server:
+3. Run the server:
 ```bash
 cd abx_exchange_server
 node main.js
 ```
-> 📌 This will start the ABX Exchange Server on port 3000
 
-🔁 Leave this terminal running while you run the C# client.
+### Run the C# ABX Client
 
----
-
-### 2️⃣ Run the C# ABX Client
-
-1. Open a new terminal window or tab.
-
-2. Navigate to the C# client folder:
+1. In a new terminal:
 ```bash
-cd AbxClient_Tiker_Reader/ABXClient
+cd ABXClient
 ```
+
+2. You should have .NET SDK installed.
 
 3. Run the client:
 ```bash
 dotnet run
 ```
-> 📝 Make sure you have the .NET SDK installed:  
-➡️ https://dotnet.microsoft.com/download
 
----
+## Output
 
-## 📤 Output
-
-The client generates a file called `output.json` inside the `ABXClient` folder.  
-This JSON file contains all packets from the server with no missing sequences.
-
----
-
-## 🙋‍♀️ Author
-
-🔗 GitHub: [shilpisprasad](https://github.com/shilpisprasad)
+The client generates a file `output.json` inside the `ABXClient` folder containing all ticker data from the server.
